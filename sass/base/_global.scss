@@ -1,0 +1,61 @@
+/* ==========================================================================
+   SITE STYLES
+   ========================================================================== */
+
+/* Preserve some sanity */
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    height: 100%;
+    font-family: $serif-font;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+}
+
+// Reset some basic elements
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+// Images
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+// Links
+a {
+    color: $link-color;
+    text-decoration: none;
+    @include transition(color);
+    &:visited {
+        color: $link-color;
+    }
+    &:hover {
+        color: darken($link-color,10%);
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}

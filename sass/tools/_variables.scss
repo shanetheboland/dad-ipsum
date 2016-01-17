@@ -1,0 +1,38 @@
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+// Fonts
+$sans-serif-font: 'Noto Sans', Helvetica, Arial, sans-serif;
+$serif-font: 'Noto Serif', Georgia, serif;
+$small-font: $sans-serif-font;
+
+// Black & White
+$black:  #222;
+$white:  #FFFFFF;
+
+//Gray
+$gray:   #828282;
+$lightgray: lighten($gray, 40%);
+$darkgray: darken($gray, 25%);
+
+// Colors
+$red: #FF4136;
+$blue: 	 #0074D9;
+
+
+// Color Aliases
+$background-color: $black;
+$primary-color:    $red;
+$secondary-color:  $blue;
+$text-color:       $white;
+$link-color:       $blue;
+
+
+// Spacing
+$spacing-unit:    30px;
+$lg-spacing-unit: $spacing-unit * 2; //60px
+$content-width: $spacing-unit * 20; //600px
+
+// Borders
+$border-radius: 4px;
+$border-width: 2px;

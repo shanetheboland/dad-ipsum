@@ -1,0 +1,59 @@
+/* ==========================================================================
+   TYPE
+
+   - Base
+   - Type Scale
+
+   ========================================================================== */
+
+
+/* Base
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+    margin: 0;
+    margin-bottom: $spacing-unit;
+}
+
+
+/* Type Scale (h1, h2, h3, p, small)
+   ========================================================================== */
+h1, .h1 {
+  font: normal 700 64px/1.40625 $sans-serif-font;
+}
+h2, .h2 {
+  font: normal 700 48px/1.25 $sans-serif-font;
+}
+h3, .h3 {
+  font: normal 700 32px/1.875 $sans-serif-font;
+}
+p {
+  font: normal 400 20px/1.5 $serif-font;
+}
+small, .small {
+  font: normal 700 14px/2.14285 $small-font;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+b, strong {
+  font-weight: 700;
+}
+i, em {
+  font-style: italic;
+}
+
+
+/* Typographic Styles
+  =========================================================================== */
+hr {
+    border: 0;
+    border-bottom: $border-width dotted $secondary-color;
+    margin: $spacing-unit auto;
+}
+
+/* Lists
+  =========================================================================== */
+ul, ol {
+  margin-left: $spacing-unit;
+}
