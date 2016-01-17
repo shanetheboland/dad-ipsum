@@ -1,32 +1,16 @@
-# HTML Starter Project
+# Dad Ipsum
 
-## What is this?
-
-View the project page at [http://github.com/shanetheboland/html-starter](http://github.com/shanetheboland/html-starter "HTML Starter - A basic starting point for new HTML projects")
-
-HTML Starter is a starting point for prototyping HTML5 SASS projects.
-Uses gulp to create a dev environment for rapidly prototyping sites. 
-
-## Features
-
-* sass compilation
-* sass folder structure
-* css minification
-* css linting
-* autoprefixer (automatically adds appropriate vendor prefixes) 
-* browser reload on filesave
-* local server for serving a static site
-* google fonts
-* grid system
-* favicons
+A lorem ipsum generator in the language of Dads.
 
 ## Getting started
 
-* Create a new repo for your project on Github
+* Clone the project and Add a new git remote
 * In terminal run
 ```bash
-    git clone git@github.com:shanetheboland/html-starter.git yourNewRepoName
+    git clone git@github.com:shanetheboland/dad-ipsum.git yourNewRepoName
     cd yourNewRepoName
+
+    # add new git remote
     rm -rf .git
     git init
     git remote add origin git@github.com:yourUserName/yourNewRepoName.git
@@ -39,7 +23,7 @@ Uses gulp to create a dev environment for rapidly prototyping sites.
 ```
 
 ## Dev environment
-To set up a convenient dev environment run this at the root of mnml
+To set up a convenient dev environment run this at the root of the project
 
 ```bash
 npm install .
@@ -51,10 +35,6 @@ Then run
 npm start
 ```
 
-Gulp is a javascript task runner. It compiles sass, lints the compiled css, and
-sets up a browser-sync server so you can save your fingers from pressing ⌘+TAB + ⌘+r 
-every time you save a file.
-
 * Once you add & commit files you are ready to publish run:
 ```bash
 git push origin master
@@ -62,6 +42,7 @@ git push origin master
 
 # Author
 
+[Nick Jubrey](http://nickjubrey.com "Nick Jubrey - Web Designer")
 [Shane Boland](http://shanetheboland.com "Shane Boland - Frontend Designer")
 
 # License
@@ -87,4 +68,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
