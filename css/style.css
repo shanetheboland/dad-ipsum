@@ -64,7 +64,7 @@ a {
 
 
 
-.container {
+.wrapper {
     max-width: 800px;
     padding: 20px;
     margin: 0 auto;
@@ -144,4 +144,11 @@ div {
    /*box-shadow: 1px 1px 11px #330033;*/
    border: 1px solid gray;
    background: white url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 319px center;
+}
+
+.ads {
+  text-align: center;
+}
+.ads > a {
+  margin-right: 20px;
 }
