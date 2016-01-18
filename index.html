@@ -10,11 +10,12 @@
     <meta name="description" content="minimal template to building reponsive websites with html5 and sass">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Compiled and minified stylesheet -->
-    <link rel="stylesheet" href="css/style.min.css">
-
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:400,900,400italic|Merriweather:400,900' rel='stylesheet' type='text/css'>
+
+    <!-- Compiled and minified stylesheet -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Uncomment to view & test baseline -->
     <!-- <link rel="stylesheet" href="http://basehold.it/30"> -->
@@ -27,15 +28,52 @@
   </head>
   <body>
     
-    <!-- Replace this with your own content -->
-    <div style="display:table;table-layout:fixed:text-align:center;width:100%;height:100%;">
-      <p style="display:table-cell;height:100%;vertical-align:middle;text-align:center; width:100%;">
-        ahhh, nothing like the feeling of a new HTML project<br><br>
-        <small>enjoy</small>
-      </p>
+    <div class="container">
+      <h1>Dad Ipsum</h1>
+      <p>Generate filler text in the language of Dad.</p>
+      <br>
+      <form name="loremForm" action="javascript:objectTag();" id="loremForm">
+
+        <div>
+          <label for="loremString"><strong>Select language…</strong></label>
+          <div class="select-wrapper">
+            <select name="loremString" style="width: 100%;">
+              <option value="moms-home" selected="selected">Dad Ipsum: Moms home</option>
+              <option value="moms-not-home">Dad Ipsum: Moms not home</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="type"><strong>Select number of </strong></label>
+          <div class="select-wrapper">
+            <select name="type">
+              <option value="characters">Characters</option>
+              <option value="words">Words</option>
+              <option value="paragraphs">Paragraphs</option>
+            </select>
+          </div>
+          <input type="text" name="numbers" value="8" size="6">
+        </div>
+
+        <div>
+          
+          <input type="submit" name="btnOK" value="Generate" class="button">
+        </div>
+        
+        
+        <br>
+        
+        <textarea rows="10" name="output" style="width: 100%;"></textarea>
+
+      </form>
+
+
+      <input type="button" onclick="copypaste()" value="Select Text" name="select" class="button">
+      <input type="button" onclick=document.loremForm.reset() value="Reset form" class="button secondary">
     </div>
 
-    <!-- Include your JS here -->
+    <script src="js/ipsum.js"></script>
 
   </body>
 </html>
